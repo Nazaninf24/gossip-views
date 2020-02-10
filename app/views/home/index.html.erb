@@ -1,0 +1,21 @@
+</br>
+</br>
+<center><h3>Bienvenue sur :</h3>
+</br>
+<center><h1>The Gossip Project</h1>
+<br>
+<p>Voici les auteurs et leurs potins :</p>
+
+
+<p><%Gossip.all.each do |g|%>
+
+<div class="card" style="width: 18rem; margin: 5px;">
+  <div class="card-body">
+    <h5 class="card-title">potin : <%=link_to g.title, gossip_path(g.id)%></h5>
+    <h6 class="card-subtitle mb-2 text-muted">auteur : <%=g.user.first_name%></h6>
+
+</div>
+</div>
+
+<%end%></p></center>
+</div>

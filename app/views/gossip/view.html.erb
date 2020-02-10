@@ -1,0 +1,6 @@
+<%=link_to @gossip.user.first_name, user_path(@gossip.user_id)%>
+<br>
+<p>titre du gossip : <%=@gossip.title%></p>
+<p>contenu du gossip : <%=@gossip.content%></p>
+<p>créé à : <%=@gossip.created_at%>
+
