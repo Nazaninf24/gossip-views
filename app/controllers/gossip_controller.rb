@@ -1,5 +1,9 @@
 class GossipController < ApplicationController
-  def view
-   @gossip = Gossip.find(params['gossip_id'])
+  def index
+   @gossip = Gossip.all
+  end
+  
+  def show
+  @gossip = Gossip.find(params[:id]) 
   end
 end
